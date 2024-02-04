@@ -1,0 +1,28 @@
+/* Mobile Version */
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 95%;
+  }
+  .hero-section .hero-section-items {
+    grid-template-columns: 1fr;
+  }
+  .hero-section .hero-section-items h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+
+/* Tablet  */
+
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+    .container {
+      width: 95%;
+    }
+    .hero-section .hero-section-items h1 {
+      font-size: 32px;
+      line-height: 42px;
+    }
+  }
+  

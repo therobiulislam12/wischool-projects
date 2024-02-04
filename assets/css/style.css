@@ -1,0 +1,112 @@
+/* Google font load*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #09b451;
+  --secondary-color: #333333;
+  --light-bg: #e4ffff;
+  --black: #000000;
+  --white: #fff;
+
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+}
+
+/* Common CSS */
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  line-height: 1.25rem;
+  color: var(--secondary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+ul li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+button {
+  border: none;
+}
+
+/* Hero Section */
+.hero-section {
+  margin: 40px 0;
+}
+.hero-section .container{
+    position: relative;
+    padding: 49px 0;
+}
+.hero-section .container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 107px;
+    background-color: var(--light-bg);
+    z-index: -1;
+    border-radius: 0px 50px 50px 0px;
+}
+.hero-section .hero-section-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.hero-section .hero-section-items h1 {
+  font-size: 60px;
+  line-height: 80px;
+  font-weight: 700;
+}
+.hero-section .hero-section-items h1 span {
+  color: var(--primary-color);
+}
+.hero-section .hero-section-items .btn {
+  padding: 20px 40px;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+  border: 1px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.hero-section .hero-section-items .btn:hover {
+  background: #e7faef;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
