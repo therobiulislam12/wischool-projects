@@ -11,6 +11,17 @@
     font-size: 32px;
     line-height: 42px;
   }
+
+
+  /* features section */
+  .feature_section .features-section-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .feature_section .features-section-items:last-child(){
+    width: 100%;
+  }
 }
 
 

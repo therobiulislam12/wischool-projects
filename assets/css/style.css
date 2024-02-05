@@ -62,20 +62,20 @@ button {
 .hero-section {
   margin: 40px 0;
 }
-.hero-section .container{
-    position: relative;
-    padding: 49px 0;
+.hero-section .container {
+  position: relative;
+  padding: 49px 0;
 }
-.hero-section .container::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 107px;
-    background-color: var(--light-bg);
-    z-index: -1;
-    border-radius: 0px 50px 50px 0px;
+.hero-section .container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 107px;
+  background-color: var(--light-bg);
+  z-index: -1;
+  border-radius: 0px 50px 50px 0px;
 }
 .hero-section .hero-section-items {
   display: grid;
@@ -109,4 +109,52 @@ button {
   background: #e7faef;
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
+}
+
+/* Features Section */
+.feature_section {
+  padding: 10px 0 30px;
+}
+.feature_section .features-section-items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 48px;
+}
+.feature_section .features-section-items .feature-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: var(--light-bg);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.feature_section .features-section-items .feature-item img {
+  width: 40px;
+}
+
+.feature_section .features-section-items .feature-item h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Course section */
+.course-section {
+  padding: 30px 0;
+}
+
+.course-section .course-items {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-section .course-items .course-item {
+  padding: 10px;
+}
+.course-section .course-items .course-item h3 {
+  margin-top: -50px;
+  color: var(--white);
+  font-size: 34px;
 }
